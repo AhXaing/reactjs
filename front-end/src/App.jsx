@@ -29,9 +29,11 @@ function App() {
 
       {is_dashboard && (
         <>
-          <Routes path="dashboard">
-            <Route path="" element={<h1>Dashboard</h1>} />
-            <Route path="user" element={<h1>Dashboard User</h1>} />
+          <Routes>
+            <Route path="dashboard">
+              <Route path="" element={<h1>Dashboard</h1>} />
+              <Route path="user" element={<h1>Dashboard User</h1>} />
+            </Route>
           </Routes>
         </>
       )}
